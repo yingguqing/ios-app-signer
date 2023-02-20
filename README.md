@@ -1,18 +1,13 @@
 # iOS App Signer
-This is an app for OS X that can (re)sign apps and bundle them into ipa files that are ready to be installed on an iOS device.
+这是一个在MacOS上运行的重签名工具，个人定制了部分功能。
 
-Supported input types are: ipa, deb, app, xcarchive
+fork于[ios-app-signer](https://github.com/DanTheMan827/ios-app-signer)。
 
-Usage
-------
-This app requires Xcode to be installed, it has run successfully on the new macOS 12 Monterey.
+感谢原作者的分享。
 
-You need a provisioning profile and signing certificate, you can get these from Xcode by creating a new project.
+## 定制功能
 
-You can then open up iOS App Signer and select your input file, signing certificate, provisioning file, and optionally specify a new application ID and/or application display name.
-
-<a href="https://paypal.me/DanTheMan827" class="donate"><img src="http://dantheman827.github.io/images/donate-button.svg" height="44" alt="Donate"></a>
-
-Thanks To
-------
-[maciekish / iReSign](https://github.com/maciekish/iReSign): The basic process was gleaned from the source code of this project.
+1. 删除了更新功能，有需要再更新。
+2. 添加描述文件tips中关于包含证书的说明
+3. 选择描述文件时，如果当前选择的证书不包含在描述文件中时，会自动选择本地有并包含在描述文件中的第一个证书
+4. 取消勾选`No get-task-allow`

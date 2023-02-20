@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -144,12 +143,6 @@
                                     <action selector="fixSigning:" target="aMe-uV-AHx" id="11N-yH-9Q4"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Check for Updates" id="z6H-Tg-1uh">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="checkForUpdates:" target="aMe-uV-AHx" id="teq-CI-brW"/>
-                                </connections>
-                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>
@@ -161,11 +154,11 @@
             <windowCollectionBehavior key="collectionBehavior" fullScreenNone="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="550" height="242"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1080"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
             <value key="minSize" type="size" width="550" height="242"/>
             <value key="maxSize" type="size" width="9999" height="242"/>
-            <view key="contentView" id="se5-gp-TjO" customClass="MainView" customModule="iOS_App_Signer" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="550" height="255"/>
+            <view key="contentView" misplaced="YES" id="se5-gp-TjO" customClass="MainView" customModule="iOS_App_Signer" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="550" height="242"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YSK-IJ-CeM">
@@ -211,7 +204,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jID-Ce-koR">
-                        <rect key="frame" x="469" y="219" width="80" height="32"/>
+                        <rect key="frame" x="470" y="219" width="79" height="32"/>
                         <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="G75-5L-8SZ">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -263,7 +256,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GdX-jd-F08">
-                        <rect key="frame" x="136" y="226" width="332" height="21"/>
+                        <rect key="frame" x="136" y="226" width="333" height="21"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="File path or URL accepted" drawsBackground="YES" usesSingleLineMode="YES" id="fri-IK-93r">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -359,7 +352,7 @@
                     </textField>
                     <button toolTip="Don't add get-task-allow entitlement, as it might break certain apps" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vp1-aK-9A4">
                         <rect key="frame" x="390" y="60" width="134" height="18"/>
-                        <buttonCell key="cell" type="check" title="No get-task-allow" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WUb-nf-ekk">
+                        <buttonCell key="cell" type="check" title="No get-task-allow" bezelStyle="regularSquare" imagePosition="left" inset="2" id="WUb-nf-ekk">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
